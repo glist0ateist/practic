@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="50">
+			<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="52">
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<CalendarField name="ПолеКалендаря" id="10">
+							<DataPath>Объект.ПолеКалендаря</DataPath>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="ПолеКалендаряКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПолеКалендаряРасширеннаяПодсказка" id="12"/>
+						</CalendarField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="54">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<InputField name="Номер" id="1">
+							<DataPath>Объект.Number</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Месяц" id="47">
+							<DataPath>Объект.Месяц</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="МесяцКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="Сотрудник" id="7">
+							<DataPath>Объект.Сотрудник</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="СотрудникКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Посещаемость" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Посещаемость</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПосещаемостьКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="ПосещаемостьКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="ПосещаемостьРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="ПосещаемостьСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>Посещаемость</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПосещаемостьСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПосещаемостьСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПосещаемостьСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>Посещаемость</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПосещаемостьСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ПосещаемостьСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПосещаемостьУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>Посещаемость</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПосещаемостьУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ПосещаемостьУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПосещаемостьНомерСтроки" id="26">
+					<DataPath>Объект.Посещаемость.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПосещаемостьНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПосещаемостьНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<CheckBoxField name="ПосещаемостьПонедельник" id="32">
+					<DataPath>Объект.Посещаемость.Понедельник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПосещаемостьПонедельникКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПосещаемостьПонедельникРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПосещаемостьВторник" id="35">
+					<DataPath>Объект.Посещаемость.Вторник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПосещаемостьВторникКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПосещаемостьВторникРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПосещаемостьСреда" id="38">
+					<DataPath>Объект.Посещаемость.Среда</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПосещаемостьСредаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПосещаемостьСредаРасширеннаяПодсказка" id="40"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПосещаемостьЧетверг" id="41">
+					<DataPath>Объект.Посещаемость.Четверг</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПосещаемостьЧетвергКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПосещаемостьЧетвергРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПосещаемостьПятница" id="44">
+					<DataPath>Объект.Посещаемость.Пятница</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПосещаемостьПятницаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПосещаемостьПятницаРасширеннаяПодсказка" id="46"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ТабельПосещаемости</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

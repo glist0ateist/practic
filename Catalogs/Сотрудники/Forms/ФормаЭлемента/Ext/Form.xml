@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа5" id="60">
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<PictureField name="Фото" id="57" DisplayImportance="VeryHigh">
+					<DataPath>СсылкаНаКартинку</DataPath>
+					<TitleHeight>100</TitleHeight>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>5000</MaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>2000</MaxHeight>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<PictureSize>Proportionally</PictureSize>
+					<Zoomable>true</Zoomable>
+					<NonselectedPictureText>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фото сотрудника</v8:content>
+						</v8:item>
+					</NonselectedPictureText>
+					<ContextMenu name="ФотоКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ФотоРасширеннаяПодсказка" id="59"/>
+				</PictureField>
+				<UsualGroup name="Группа6" id="62">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Button name="ВыбратьКартинку" id="64">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыбратьКартинку</CommandName>
+							<ExtendedTooltip name="ВыбратьКартинкуРасширеннаяПодсказка" id="65"/>
+						</Button>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Должность" id="54">
+							<DataPath>Объект.Должность</DataPath>
+							<ContextMenu name="ДолжностьКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ФИО</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>25</Width>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ДатаНайма" id="66">
+							<DataPath>Объект.ДатаНайма</DataPath>
+							<ContextMenu name="ДатаНаймаКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ДатаНаймаРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ДатаУвольнения" id="69">
+							<DataPath>Объект.ДатаУвольнения</DataPath>
+							<ContextMenu name="ДатаУвольненияКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ДатаУвольненияРасширеннаяПодсказка" id="71"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа2" id="42">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<Page name="ЛичнаяИнформация" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Личная информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Личная информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<ExtendedTooltip name="ЛичнаяИнформацияРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="50">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="51"/>
+							<ChildItems>
+								<InputField name="Пол" id="22">
+									<DataPath>Объект.Пол</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>7</MaxWidth>
+									<ContextMenu name="ПолКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="Возраст" id="25">
+									<DataPath>Объект.Возраст</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВозрастКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ВозрастРасширеннаяПодсказка" id="27"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="48">
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<CheckBoxField name="СтатусЗамужества" id="19">
+									<DataPath>Объект.СтатусЗамужества</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтатусЗамужестваКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="СтатусЗамужестваРасширеннаяПодсказка" id="21"/>
+								</CheckBoxField>
+								<CheckBoxField name="Дети" id="28">
+									<DataPath>Объект.Дети</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДетиКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ДетиРасширеннаяПодсказка" id="30"/>
+								</CheckBoxField>
+								<InputField name="ДетиКоличество" id="31">
+									<DataPath>Объект.ДетиКоличество</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ДетиКоличествоКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ДетиКоличествоРасширеннаяПодсказка" id="33"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="МестоЖительства" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место жительства</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место жительства</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="МестоЖительстваРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<InputField name="Город" id="7">
+							<DataPath>Объект.Город</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ГородКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Улица" id="10">
+							<DataPath>Объект.Улица</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="УлицаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="УлицаРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<UsualGroup name="Группа4" id="52">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<InputField name="Дом" id="13">
+									<DataPath>Объект.Дом</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ДомКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДомРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="Квартира" id="16">
+									<DataPath>Объект.Квартира</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КвартираКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="КвартираРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сотрудники</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СсылкаНаКартинку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фото</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьКартинку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьКартинку</Action>
+		</Command>
+	</Commands>
+</Form>
